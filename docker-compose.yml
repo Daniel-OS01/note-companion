@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   app:
     build:
@@ -49,14 +51,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 30s
-    deploy:
-      resources:
-        limits:
-          cpus: '2.0'
-          memory: 8G
-        reservations:
-          cpus: '0.5'
-          memory: 2G
 
   db:
     image: postgres:16-alpine
@@ -72,15 +66,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-    deploy:
-      resources:
-        limits:
-          cpus: '1.0'
-          memory: 4G
-        reservations:
-          cpus: '0.25'
-          memory: 1G
 
 volumes:
   app_data:
   db_data:
+
