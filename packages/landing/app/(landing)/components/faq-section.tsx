@@ -53,7 +53,7 @@ export function FaqSection() {
           <FaqItem
             question="Which models can I use?"
             answer={`<strong>Cloud Service</strong>
-• With a subscription, you get access to models/gemini-2.5-flash model. It's the best all-around model for performance.
+• With a subscription, you get access to gemini-2.5-flash model. It's the best all-around model for performance.
 
 <strong>Self-Hosted Option</strong>
 • Use any local model of your choice
@@ -75,7 +75,7 @@ export function FaqSection() {
             answer={`Privacy is super important to us. Here's a quick rundown of how we handle your information:
 
 <strong>Your Files</strong>
-  Your files are processed through OpenAI's models/gemini-2.5-flash when using the cloud-hosted version.
+  Your files are processed through OpenAI's gemini-2.5-flash when using the cloud-hosted version.
   Unlike with a Chat GPT subscription, your prompts are not saved or stored anywhere other than your computer.
 
 <strong>Your Data</strong>

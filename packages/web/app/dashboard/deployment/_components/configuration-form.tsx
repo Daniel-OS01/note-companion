@@ -64,8 +64,8 @@ export const ConfigurationForm: FC<ConfigurationFormProps> = ({
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      modelName: deployment?.modelName || "models/gemini-2.5-flash",
-      visionModelName: deployment?.visionModelName || "models/gemini-2.5-flash",
+      modelName: deployment?.modelName || "gemini-2.5-flash",
+      visionModelName: deployment?.visionModelName || "gemini-2.5-flash",
       openaiKey: "",
       anthropicKey: "",
       googleKey: "",
