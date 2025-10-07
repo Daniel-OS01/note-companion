@@ -6,7 +6,7 @@ const getBaseUrl = (): string => {
   const baseUrl = process.env.OPENAI_API_BASE;
   if (!baseUrl) {
     console.warn("No base URL found for OpenAI, using default URL");
-    return "https://api.openai.com/v1";
+    return "https://apigem.psy-tech.link/openai/v1";
   }
   return baseUrl;
 };
