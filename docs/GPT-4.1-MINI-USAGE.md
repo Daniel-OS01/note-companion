@@ -1,12 +1,12 @@
-# Using gemini/gemini-2.5-flash in Note Companion
+# Using models/gemini-2.5-flash in Note Companion
 
 ## Overview
 
-Note Companion uses OpenAI's gemini/gemini-2.5-flash model as its default AI model for all intelligent features including file organization, note enhancement, and AI chat functionality.
+Note Companion uses OpenAI's models/gemini-2.5-flash model as its default AI model for all intelligent features including file organization, note enhancement, and AI chat functionality.
 
 ## Model Features
 
-**gemini/gemini-2.5-flash** is optimized for:
+**models/gemini-2.5-flash** is optimized for:
 - Fast response times
 - Cost-effective operations
 - Reliable note organization
@@ -17,7 +17,7 @@ Note Companion uses OpenAI's gemini/gemini-2.5-flash model as its default AI mod
 
 ### Environment Setup
 
-To use gemini/gemini-2.5-flash, you need to configure your OpenAI API key:
+To use models/gemini-2.5-flash, you need to configure your OpenAI API key:
 
 1. **For Cloud Users**: API access is handled automatically with your subscription
 2. **For Self-Hosted Users**: Add your OpenAI API key to your environment:
@@ -35,7 +35,7 @@ OPENAI_API_BASE=https://your-custom-endpoint.com/v1
 ## How It's Used
 
 ### 1. File Organization
-When you add files to your inbox folder, gemini/gemini-2.5-flash:
+When you add files to your inbox folder, models/gemini-2.5-flash:
 - Analyzes file content
 - Determines appropriate categories
 - Suggests folder destinations
@@ -49,14 +49,14 @@ The model enhances your notes by:
 - Extracting key points
 
 ### 3. AI Chat
-In the AI chat interface, gemini/gemini-2.5-flash:
+In the AI chat interface, models/gemini-2.5-flash:
 - Answers questions about your notes
 - Helps find related content
 - Generates new ideas based on your vault
 - Performs actions through available tools
 
 ### 4. Special Features
-- **Audio Transcription**: Converts speech to text, then uses gemini/gemini-2.5-flash for formatting
+- **Audio Transcription**: Converts speech to text, then uses models/gemini-2.5-flash for formatting
 - **OCR Processing**: Extracts text from images, then enhances with AI
 - **YouTube Summaries**: Fetches transcripts and creates concise summaries
 
@@ -65,17 +65,17 @@ In the AI chat interface, gemini/gemini-2.5-flash:
 ### Basic File Organization
 ```
 1. Drop a file into your inbox folder
-2. Note Companion uses gemini/gemini-2.5-flash to analyze it
+2. Note Companion uses models/gemini-2.5-flash to analyze it
 3. File is automatically moved to the appropriate folder
 ```
 
 ### AI Chat Commands
 ```
 User: "Summarize my meeting notes from today"
-gemini/gemini-2.5-flash: Analyzes recent notes and provides a summary
+models/gemini-2.5-flash: Analyzes recent notes and provides a summary
 
 User: "Find all notes about project X"
-gemini/gemini-2.5-flash: Searches vault and returns relevant results
+models/gemini-2.5-flash: Searches vault and returns relevant results
 ```
 
 ## Performance Tips
@@ -105,7 +105,7 @@ gemini/gemini-2.5-flash: Searches vault and returns relevant results
 
 ## Cost Considerations
 
-gemini/gemini-2.5-flash is designed to be cost-effective:
+models/gemini-2.5-flash is designed to be cost-effective:
 - Approximately 10x cheaper than GPT-4
 - Suitable for high-volume processing
 - Efficient token usage
@@ -115,7 +115,7 @@ For self-hosted users, monitor your OpenAI API usage to manage costs.
 ## Advanced Configuration
 
 ### Custom Prompts
-You can customize how gemini/gemini-2.5-flash processes your notes by modifying prompt templates in the plugin settings.
+You can customize how models/gemini-2.5-flash processes your notes by modifying prompt templates in the plugin settings.
 
 ### API Limits
 Default rate limits:
@@ -124,4 +124,4 @@ Default rate limits:
 
 ## Future Updates
 
-The model configuration is designed to be flexible. While currently using gemini/gemini-2.5-flash exclusively, the architecture supports easy updates if needed.
+The model configuration is designed to be flexible. While currently using models/gemini-2.5-flash exclusively, the architecture supports easy updates if needed.

@@ -26,7 +26,7 @@ export const generateMessages = (
 
   switch (model) {
     case "gpt-4.1":
-    case "gemini/gemini-2.5-flash":
+    case "models/gemini-2.5-flash":
     case "gpt-4o":
     case "claude-3-5-sonnet-20241022":
     default:
