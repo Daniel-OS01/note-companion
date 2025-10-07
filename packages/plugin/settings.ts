@@ -28,7 +28,7 @@ export class FileOrganizerSettings {
   ignoreFolders = [""];
   stagingFolder = ".notecompanion/staging";
   enableSelfHosting = false;
-  selfHostingURL = "http://apinote.psy-tech.link";
+  selfHostingURL = "https://apinote.psy-tech.link";
 
   enableFabric = false;
   useFolderEmbeddings = false;

@@ -32,7 +32,7 @@ describe("Chat API Route", () => {
 
   it("should include citation metadata in response", async () => {
     const mockRequest = new NextRequest(
-      "http://apinote.psy-tech.link/api/chat",
+      "https://apinote.psy-tech.link/api/chat",
       {
         method: "POST",
         body: JSON.stringify({
