@@ -37,7 +37,7 @@ export class FileOrganizerSettings {
   enableDeepSearch = false;
   showLocalLLMInChat = false;
   customFolderInstructions = "";
-  selectedModel: "gpt-4.1-mini" | "llama3.2" = "gpt-4.1-mini";
+  selectedModel: "gemini/gemini-2.5-flash" | "llama3.2" = "gemini/gemini-2.5-flash";
   customModelName = "llama3.2";
   tagScoreThreshold = 70;
   formatBehavior: "override" | "newFile" = "override";
