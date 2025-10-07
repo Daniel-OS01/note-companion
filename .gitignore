@@ -29,7 +29,17 @@ data.json
 **/.turbo/
 .vercel
 .env*.local
+**/.envback
 
 # Expo native directories
 /android/
 /ios/
+
+# Report files
+*REPORT*.md
+*REPORT*.MD
+*REPORT*.txt
+*REPORT*.TXT
+*SUMMARY*.md
+*SUMMARY*.MD
+.env.production
