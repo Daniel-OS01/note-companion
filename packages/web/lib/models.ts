@@ -1,6 +1,6 @@
 import { createOpenAI } from "@ai-sdk/openai";
 
-const DEFAULT_MODEL = "gpt-4.1-mini";
+const DEFAULT_MODEL = "gemini/gemini-2.5-flash";
 
 const getBaseUrl = (): string => {
   const baseUrl = process.env.OPENAI_API_BASE;
@@ -14,10 +14,10 @@ const getBaseUrl = (): string => {
 const baseURL = getBaseUrl();
 
 const models = {
-  "gpt-4.1-mini": createOpenAI({
+  "gemini/gemini-2.5-flash": createOpenAI({
     apiKey: process.env.OPENAI_API_KEY,
     baseURL,
-  })("gpt-4.1-mini"),
+  })("gemini/gemini-2.5-flash"),
 };
 
 export const getModel = (name: string) => {
