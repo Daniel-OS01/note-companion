@@ -22,7 +22,7 @@ A: It's possible via this link: https://app.notecompanion.ai/dashboard/pricing
 
 **Q: Is Note Companion compatible with local LLMs?**
 
-A: Note Companion can work with local LLMs, but the experience is currently not on par with gemini-2.5-flash in terms of performance and accuracy. Local models are generally adequate for simpler tasks like tag guessing and classification but require significant customization to match the quality of more advanced models. For instance, modifications like updating the "streamObject" function in the code may be necessary to ensure compatibility with tools like Ollama. While we aim to provide a fully local experience in the future, the current technology limits its practicality. We'd love to hear about your experiments to help improve support for local setups across the community!
+A: Note Companion can work with local LLMs, but the experience is currently not on par with gemini/gemini-2.5-flash in terms of performance and accuracy. Local models are generally adequate for simpler tasks like tag guessing and classification but require significant customization to match the quality of more advanced models. For instance, modifications like updating the "streamObject" function in the code may be necessary to ensure compatibility with tools like Ollama. While we aim to provide a fully local experience in the future, the current technology limits its practicality. We'd love to hear about your experiments to help improve support for local setups across the community!
 
 
 **Q: Why can't I send messages in FO2000 Discord channels?**

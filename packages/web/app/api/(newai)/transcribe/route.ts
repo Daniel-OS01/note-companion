@@ -69,7 +69,7 @@ export async function POST(request: Request) {
 
     const openai = new OpenAI({ 
       apiKey: process.env.OPENAI_API_KEY,
-      baseURL: process.env.OPENAI_API_BASE || "https://apigem.psy-tech.link/openai/v1"
+      baseURL: process.env.OPENAI_API_BASE || "https://litellm.psy-tech.link"
     });
 
     // Check file size
@@ -153,7 +153,7 @@ async function handlePresignedUrlTranscription(
     // Transcribe using OpenAI
     const openai = new OpenAI({ 
       apiKey: process.env.OPENAI_API_KEY,
-      baseURL: process.env.OPENAI_API_BASE || "https://apigem.psy-tech.link/openai/v1"
+      baseURL: process.env.OPENAI_API_BASE || "https://litellm.psy-tech.link"
     });
 
     const transcription = await openai.audio.transcriptions.create({
