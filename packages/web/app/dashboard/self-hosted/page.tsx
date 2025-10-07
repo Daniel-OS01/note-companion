@@ -4,7 +4,7 @@ import { ArrowDownIcon } from "@/components/ui/icons";
 export default async function NoUserManagementPage() {
   const deploymentUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000";
+    : "http://apinote.psy-tech.link";
 
   return (
     <div className="flex min-h-screen py-7 px-4 sm:px-6 lg:px-8 flex-col">

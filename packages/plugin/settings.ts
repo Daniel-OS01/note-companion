@@ -1,5 +1,4 @@
 export class FileOrganizerSettings {
-  
   API_KEY = "";
   isLicenseValid = false;
   useLogs = true;
@@ -29,7 +28,7 @@ export class FileOrganizerSettings {
   ignoreFolders = [""];
   stagingFolder = ".notecompanion/staging";
   enableSelfHosting = false;
-  selfHostingURL = "http://localhost:3000";
+  selfHostingURL = "http://apinote.psy-tech.link";
 
   enableFabric = false;
   useFolderEmbeddings = false;
