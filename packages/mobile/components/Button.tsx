@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
     gap: 8,
     minHeight: 44, // Standard touch target
     borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.05)',
+    borderColor: 'rgba(localhost.05)',
   },
   smallButton: {
     paddingVertical: 8,

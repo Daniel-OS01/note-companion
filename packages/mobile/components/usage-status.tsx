@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
   usageBar: {
     height: 6,
     width: '100%',
-    backgroundColor: 'rgba(0,0,0,0.1)',
+    backgroundColor: 'rgba(localhost.1)',
     borderRadius: 3,
     marginTop: 8,
     overflow: 'hidden',

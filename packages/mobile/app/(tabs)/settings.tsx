@@ -276,7 +276,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     paddingTop: 16,
     borderTopWidth: 1,
-    borderTopColor: 'rgba(0,0,0,0.05)',
+    borderTopColor: 'rgba(localhost.05)',
   },
   dangerTitle: {
     color: '#E53E3E',

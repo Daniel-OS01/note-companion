@@ -103,7 +103,7 @@ pnpm --filter web dev  # Runs on port 3010
 ```
 
 ### Playwright Testing
-- Navigate to 0.0.0.0:3010
+- Navigate to localhost:3010
 - Use provided test credentials
 - Take screenshots of key workflows
 

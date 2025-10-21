@@ -88,13 +88,13 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.08)',
+    borderColor: 'rgba(localhost.08)',
     margin: 16,
   },
   header: {
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(0,0,0,0.05)',
+    borderBottomColor: 'rgba(localhost.05)',
     backgroundColor: 'rgb(255, 250, 240)',
   },
   title: {
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 12,
     borderTopWidth: 1,
-    borderTopColor: 'rgba(0,0,0,0.05)',
+    borderTopColor: 'rgba(localhost.05)',
     backgroundColor: 'rgb(255, 250, 240)',
   },
   expandButtonText: {
@@ -211,7 +211,7 @@ const markdownStyles = {
   },
   table: {
     borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.08)',
+    borderColor: 'rgba(localhost.08)',
     borderRadius: 8,
     marginVertical: 12,
   },
@@ -222,12 +222,12 @@ const markdownStyles = {
     padding: 12,
     borderBottomWidth: 1,
     borderRightWidth: 1,
-    borderColor: 'rgba(0,0,0,0.08)',
+    borderColor: 'rgba(localhost.08)',
   },
   td: {
     padding: 12,
     borderBottomWidth: 1,
     borderRightWidth: 1,
-    borderColor: 'rgba(0,0,0,0.08)',
+    borderColor: 'rgba(localhost.08)',
   },
 }; 

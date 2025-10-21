@@ -102,7 +102,7 @@ export default function TabLayout() {
         tabBarInactiveTintColor: tabIconDefaultColor,
         tabBarStyle: {
           backgroundColor: tabBarColor,
-          borderTopColor: 'rgba(0,0,0,0.05)',
+          borderTopColor: 'rgba(localhost.05)',
           borderTopWidth: StyleSheet.hairlineWidth,
           ...(Platform.OS === 'ios' ? {
             position: 'absolute',

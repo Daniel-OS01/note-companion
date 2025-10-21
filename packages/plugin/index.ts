@@ -126,7 +126,7 @@ export default class FileOrganizer extends Plugin {
 
   async checkCatalystAccess(): Promise<boolean> {
     // fetch the file organizer premium status
-    // if process env prod then point to prod server if not to 0.0.0.0
+    // if process env prod then point to prod server if not to localhost
     const serverUrl =
       process.env.NODE_ENV === "production"
         ? "https://app.notecompanion.ai"

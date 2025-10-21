@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     width: "100%",
     borderWidth: 1,
-    borderColor: "rgba(0,0,0,0.08)",
+    borderColor: "rgba(localhost.08)",
   },
   statusText: {
     marginTop: 12,

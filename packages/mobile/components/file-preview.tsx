@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     overflow: "hidden",
     borderWidth: 1,
-    borderColor: "rgba(0,0,0,0.08)",
+    borderColor: "rgba(localhost.08)",
     backgroundColor: "rgb(255, 250, 240)",
   },
   pdfView: {
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 20,
     borderWidth: 1,
-    borderColor: "rgba(0,0,0,0.08)",
+    borderColor: "rgba(localhost.08)",
   },
   fileNameText: {
     fontSize: 16,

@@ -1,5 +1,5 @@
 // Get the API URL from environment variables or use a default for development
-export const API_URL = process.env.EXPO_PUBLIC_API_URL || 'http://0.0.0.0:3010';
+export const API_URL = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:3010';
 
 // Add retry configuration for API requests
 export const API_CONFIG = {

@@ -132,7 +132,7 @@ export const getTargetUrl = () => {
   if (process.env.VERCEL_ENV === "preview") {
     return process.env.VERCEL_PROJECT_PREVIEW_URL;
   }
-  return "0.0.0.0:3010";
+  return "localhost:3010";
 };
 
 // Helper to validate webhook metadata

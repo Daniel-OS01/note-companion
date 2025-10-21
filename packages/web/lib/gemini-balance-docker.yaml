@@ -1,0 +1,89 @@
+services:
+  gemini-balance:
+    image: ghcr.io/snailyp/gemini-balance:latest
+    restart: unless-stopped
+    environment:
+      # Database Configuration
+      - DATABASE_TYPE=${DATABASE_TYPE}
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+
+      # Core API & Auth Configuration
+      - API_KEYS=${API_KEYS}
+      - ALLOWED_TOKENS=${ALLOWED_TOKENS}
+      - AUTH_TOKEN=${AUTH_TOKEN}
+
+      # Model & Feature Configuration (JSON must be single-line strings)
+      - THINKING_MODELS=${THINKING_MODELS}
+      - THINKING_BUDGET_MAP=${THINKING_BUDGET_MAP}
+      - IMAGE_MODELS=${IMAGE_MODELS}
+      - FILTERED_MODELS=${FILTERED_MODELS}
+      - SAFETY_SETTINGS=${SAFETY_SETTINGS}
+      - URL_CONTEXT_ENABLED=${URL_CONTEXT_ENABLED}
+
+      # Logging Configuration
+      - LOG_LEVEL=${LOG_LEVEL}
+      - ERROR_LOG_RECORD_REQUEST_BODY=${ERROR_LOG_RECORD_REQUEST_BODY}
+      - AUTO_DELETE_ERROR_LOGS_ENABLED=${AUTO_DELETE_ERROR_LOGS_ENABLED}
+      - AUTO_DELETE_ERROR_LOGS_DAYS=${AUTO_DELETE_ERROR_LOGS_DAYS}
+      - AUTO_DELETE_REQUEST_LOGS_ENABLED=${AUTO_DELETE_REQUEST_LOGS_ENABLED}
+      - AUTO_DELETE_REQUEST_LOGS_DAYS=${AUTO_DELETE_REQUEST_LOGS_DAYS}
+
+      # Timezone
+      - TZ=${TZ}
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          'python -c "import requests; exit(0) if requests.get(''http://localhost:8000/health'').status_code == 200 else exit(1)"',
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "127.0.0.1",
+          "-p${MYSQL_ROOT_PASSWORD}",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 1G
+
+volumes:
+  mysql-data:
+    driver: local

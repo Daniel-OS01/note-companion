@@ -142,7 +142,7 @@ pnpm start
 4. **Configure the plugin:**
 - In Obsidian, go to Note Companion settings
 - Enable "Self-hosting mode"
-- Set server URL to `http://0.0.0.0:3010`
+- Set server URL to `http://localhost:3010`
 - Your plugin is now connected to your local server!
 
 For detailed instructions, troubleshooting, and advanced configuration, see [SELF-HOSTING.md](SELF-HOSTING.md).

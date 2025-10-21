@@ -533,7 +533,7 @@ const styles = StyleSheet.create({
     aspectRatio: 0.7,
     ...Platform.select({
       ios: {
-        backgroundColor: 'rgba(0,0,0,0.02)',
+        backgroundColor: 'rgba(localhost.02)',
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.05,
@@ -582,7 +582,7 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor: '#FAFAFA',
     borderLeftWidth: 1,
-    borderLeftColor: 'rgba(0,0,0,0.05)',
+    borderLeftColor: 'rgba(localhost.05)',
   },
   metadataContainer: {
     flex: 2, // Take 2/5 of the available width
@@ -702,7 +702,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 6,
     paddingVertical: 2,
     borderRadius: 6,
-    backgroundColor: "rgba(0,0,0,0.6)",
+    backgroundColor: "rgba(localhost.6)",
     flexDirection: "row",
     alignItems: "center",
     zIndex: 10, // Ensure it's above other elements

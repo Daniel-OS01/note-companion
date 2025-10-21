@@ -81,12 +81,12 @@ const styles = StyleSheet.create({
   card: {
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.05)',
+    borderColor: 'rgba(localhost.05)',
   },
   elevated: {
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.1)',
+    borderColor: 'rgba(localhost.1)',
     backgroundColor: 'rgba(255,255,255,0.5)',
   },
   grouped: {
@@ -95,14 +95,14 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.05)',
+    borderColor: 'rgba(localhost.05)',
   },
   inset: {
     borderRadius: 10,
     marginHorizontal: 16,
     marginVertical: 8,
     borderWidth: 1,
-    borderColor: 'rgba(0,0,0,0.05)',
+    borderColor: 'rgba(localhost.05)',
     backgroundColor: 'rgba(255,255,255,0.5)',
   },
 });

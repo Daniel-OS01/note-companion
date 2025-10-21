@@ -1,6 +1,6 @@
 {
   "id": "f40ce293-f17f-4ff1-8eb3-e6b17effaab3",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "prevId": "localhost0-0localhost0-0localhostlocalhost00",
   "version": "7",
   "dialect": "postgresql",
   "tables": {

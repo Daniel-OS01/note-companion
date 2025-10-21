@@ -44,7 +44,7 @@ pnpm build:self-host
 pnpm start
 ```
 
-Your server will be running at `http://0.0.0.0:3010`
+Your server will be running at `http://localhost:3010`
 
 ## Detailed Installation
 
@@ -115,7 +115,7 @@ pnpm start
 The server will start on port 3010 by default. You should see:
 ```
 ▲ Next.js 15.x.x
-- Local:        http://0.0.0.0:3010
+- Local:        http://localhost:3010
 - Network:      http://[your-ip]:3010
 ✓ Ready
 ```
@@ -126,7 +126,7 @@ The server will start on port 3010 by default. You should see:
 2. Scroll to "Advanced Settings"
 3. Enable "Self-hosting mode"
 4. Set the server URL:
-   - For local machine: `http://0.0.0.0:3010`
+   - For local machine: `http://localhost:3010`
    - For network access: `http://[your-server-ip]:3010`
    - For domain with SSL: `https://your-domain.com`
 5. Click "Test Connection" to verify
@@ -141,7 +141,7 @@ If port 3010 is occupied, you can use a different port:
 PORT=8080
 ```
 
-Then update the plugin settings to use `http://0.0.0.0:8080`
+Then update the plugin settings to use `http://localhost:8080`
 
 ### Running as a Service
 
@@ -239,14 +239,14 @@ Fastest inference, good for quick processing.
 Run models completely offline.
 1. Install [Ollama](https://ollama.ai)
 2. Pull a model: `ollama pull llama3`
-3. Set in plugin settings: Model = "llama3", API URL = "http://0.0.0.0:11434"
+3. Set in plugin settings: Model = "llama3", API URL = "http://localhost:11434"
 
 ## Troubleshooting
 
 ### Common Issues
 
 #### "Cannot connect to server"
-- Verify the server is running: `curl http://0.0.0.0:3010/api/health`
+- Verify the server is running: `curl http://localhost:3010/api/health`
 - Check firewall settings
 - Ensure the URL in plugin settings is correct
 
@@ -318,7 +318,7 @@ server {
     ssl_certificate_key /path/to/key.pem;
 
     location / {
-        proxy_pass http://0.0.0.0:3010;
+        proxy_pass http://localhost:3010;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -335,7 +335,7 @@ server {
 By default, the self-hosted version uses SQLite. For production use, you can configure PostgreSQL:
 
 ```env
-DATABASE_URL=postgresql://user:password@0.0.0.0:5432/notecompanion
+DATABASE_URL=postgresql://user:password@localhost:5432/notecompanion
 ```
 
 ### Resource Limits
