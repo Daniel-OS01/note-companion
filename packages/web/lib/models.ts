@@ -1,6 +1,6 @@
 import { createOpenAI } from "@ai-sdk/openai";
 
-const DEFAULT_MODEL = "models/gemini-2.5-flash";
+const DEFAULT_MODEL = "gemini-2.5-flash";
 
 const getBaseUrl = (): string => {
   const baseUrl = process.env.OPENAI_API_BASE;
@@ -14,10 +14,10 @@ const getBaseUrl = (): string => {
 const baseURL = getBaseUrl();
 
 const models = {
-  "models/gemini-2.5-flash": createOpenAI({
+  "gemini-2.5-flash": createOpenAI({
     apiKey: process.env.OPENAI_API_KEY,
     baseURL,
-  })("models/gemini-2.5-flash"),
+  })("gemini-2.5-flash"),
 };
 
 export const getModel = (name: string) => {

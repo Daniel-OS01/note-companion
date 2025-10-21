@@ -1,1 +1,1 @@
-ALTER TABLE "vercel_tokens" ALTER COLUMN "vision_model_name" SET DEFAULT 'models/gemini-2.5-flash';
+ALTER TABLE "vercel_tokens" ALTER COLUMN "vision_model_name" SET DEFAULT 'gemini-2.5-flash';
