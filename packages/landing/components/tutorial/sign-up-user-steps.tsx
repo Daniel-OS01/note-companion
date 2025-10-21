@@ -36,7 +36,7 @@ export default function SignUpUserSteps() {
             <li>
               -{" "}
               <span className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-xs font-medium text-secondary-foreground border">
-                https://apinote.psy-tech.link/**
+                https://apinote.psy-tech.link**
               </span>
             </li>
             <li>
