@@ -64,11 +64,11 @@ async function processImageWithGPT4one(
   imageUrl: string
 ): Promise<{ textContent: string; tokensUsed: number }> {
   try {
-    console.log("Processing image with gemini-2.5-flash for OCR...");
+    console.log("Processing image with models/gemini-2.5-flash for OCR...");
     const openai = createOpenAI({ apiKey: process.env.OPENAI_API_KEY });
     console.log(`Processing OCR for image: ${imageUrl}`);
     const { object, usage } = await generateObject({
-      model: openai("gemini-2.5-flash"),
+      model: openai("models/gemini-2.5-flash"),
       schema: z.object({ markdown: z.string() }),
       messages: [
         {
@@ -81,11 +81,11 @@ async function processImageWithGPT4one(
     const textContent = object.markdown || "";
     const tokensUsed = usage?.totalTokens ?? Math.ceil(textContent.length / 4);
     console.log(
-      `gemini-2.5-flash OCR extracted ${textContent.length} chars, used approx ${tokensUsed} tokens`
+      `models/gemini-2.5-flash OCR extracted ${textContent.length} chars, used approx ${tokensUsed} tokens`
     );
     return { textContent, tokensUsed };
   } catch (error) {
-    console.error("Error processing image with gemini-2.5-flash OCR:", error);
+    console.error("Error processing image with models/gemini-2.5-flash OCR:", error);
     return {
       textContent: `Error processing image OCR: ${
         error instanceof Error ? error.message : String(error)

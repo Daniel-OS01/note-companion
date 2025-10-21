@@ -135,7 +135,7 @@ export async function generateReleaseNotes(
     apiKey: options.openAIApiKey,
   });
 
-  const model = openai("gemini-2.5-flash");
+  const model = openai("models/gemini-2.5-flash");
   const diff = getDiff(options.repoRoot, version);
   
   const maxRetries = 3;
