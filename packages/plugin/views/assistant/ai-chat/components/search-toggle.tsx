@@ -25,7 +25,7 @@ export function SearchToggle({ selectedModel }: SearchToggleProps) {
   };
 
   // Only show search controls for models that support search
-  const supportsSearch = selectedModel === 'gpt-4.1' || 
+  const supportsSearch = selectedModel === 'gemini-2.5-flash' || 
                          selectedModel === 'gemini-2.5-flash' || 
                          selectedModel === 'gpt-4o' || 
                          selectedModel === 'gpt-4o-search-preview' || 

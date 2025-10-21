@@ -2,17 +2,17 @@ export class FileOrganizerSettings {
   API_KEY = "";
   isLicenseValid = false;
   useLogs = true;
-  defaultDestinationPath = "_NoteCompanion/Processed";
-  referencePath = "_NoteCompanion/References";
-  attachmentsPath = "_NoteCompanion/Processed/Attachments";
-  pathToWatch = "_NoteCompanion/Inbox";
-  logFolderPath = "_NoteCompanion/Logs";
-  backupFolderPath = "_NoteCompanion/Backups";
-  templatePaths = "_NoteCompanion/Templates";
-  fabricPaths = "_NoteCompanion/Fabric";
-  bypassedFilePath = "_NoteCompanion/Bypassed";
-  errorFilePath = "_NoteCompanion/Errors";
-  syncFolderPath = "_NoteCompanion/Sync";
+  defaultDestinationPath = "10.Pluginexports/_NoteCompanion/Processed";
+  referencePath = "10.Pluginexports/_NoteCompanion/References";
+  attachmentsPath = "10.Pluginexports/_NoteCompanion/Processed/Attachments";
+  pathToWatch = "10.Pluginexports/_NoteCompanion/Inbox";
+  logFolderPath = "10.Pluginexports/_NoteCompanion/Logs";
+  backupFolderPath = "10.Pluginexports/_NoteCompanion/Backups";
+  templatePaths = "10.Pluginexports/_NoteCompanion/Templates";
+  fabricPaths = "10.Pluginexports/_NoteCompanion/Fabric";
+  bypassedFilePath = "10.Pluginexports/_NoteCompanion/Bypassed";
+  errorFilePath = "10.Pluginexports/_NoteCompanion/Errors";
+  syncFolderPath = "10.Pluginexports/_NoteCompanion/Sync";
 
   // inbox settings
   useSimilarTags = true;
@@ -28,7 +28,7 @@ export class FileOrganizerSettings {
   ignoreFolders = [""];
   stagingFolder = ".notecompanion/staging";
   enableSelfHosting = false;
-  selfHostingURL = "https://apinote.psy-tech.link";
+  selfHostingURL = "apinote.psy-tech.link";
 
   enableFabric = false;
   useFolderEmbeddings = false;

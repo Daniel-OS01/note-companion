@@ -135,7 +135,7 @@ export async function generateReleaseNotes(
     apiKey: options.openAIApiKey,
   });
 
-  const model = openai("gpt-4.1");
+  const model = openai("gemini-2.5-flash");
   const diff = getDiff(options.repoRoot, version);
   
   const maxRetries = 3;

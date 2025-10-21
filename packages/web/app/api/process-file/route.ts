@@ -65,7 +65,7 @@ async function processImageWithGPT4one(
     
     console.log(`Processing image URL: ${imageUrl}`); // Log the URL being sent
     const { object, usage } = await generateObject({
-      //   model: openai("gpt-4.1"), // Ensure this uses gpt-4o if intended
+      //   model: openai("gemini-2.5-flash"), // Ensure this uses gpt-4o if intended
       model,
       schema: z.object({ markdown: z.string() }),
       messages: [
