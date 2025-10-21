@@ -4,7 +4,7 @@ import { usePlugin } from '../provider';
 
 // Add a mapping for display names
 const MODEL_DISPLAY_NAMES: Record<ModelType, string> = {
-  'gemini/gemini-2.5-flash': 'Cloud',
+  'models/gemini-2.5-flash': 'Cloud',
   'custom': 'Ollama Model'
 } as const;
 
@@ -33,7 +33,7 @@ export const ModelSelector: React.FC<ModelSelectorProps> = ({
       return;
     }
     onModelSelect(model);
-    if (model === "gemini/gemini-2.5-flash" || model === "llama3.2") {
+    if (model === "models/gemini-2.5-flash" || model === "llama3.2") {
       plugin.settings.selectedModel = model;
     }
     await plugin.saveSettings();
@@ -42,7 +42,7 @@ export const ModelSelector: React.FC<ModelSelectorProps> = ({
 
   const handleCustomModelSave = async () => {
     plugin.settings.customModelName = customModel;
-    plugin.settings.selectedModel = customModel as "gemini/gemini-2.5-flash" | "llama3.2";
+    plugin.settings.selectedModel = customModel as "models/gemini-2.5-flash" | "llama3.2";
     await plugin.saveSettings();
     onModelSelect(customModel);
     setIsCustomizing(false);
@@ -78,10 +78,10 @@ export const ModelSelector: React.FC<ModelSelectorProps> = ({
           <div className="absolute bottom-full right-0 mb-1 bg-[--background-primary] border border-[--background-modifier-border] rounded shadow-lg">
             <div className="py-1">
               <div
-                onClick={() => handleModelSelect("gemini/gemini-2.5-flash")}
+                onClick={() => handleModelSelect("models/gemini-2.5-flash")}
                 className="cursor-pointer block w-full text-left px-4 py-2 text-sm text-[--text-normal] hover:bg-[--background-modifier-hover]"
               >
-                {getDisplayName("gemini/gemini-2.5-flash")}
+                {getDisplayName("models/gemini-2.5-flash")}
               </div>
 
               {isCustomizing ? (

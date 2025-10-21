@@ -1,12 +1,12 @@
 import { createOpenAI } from "@ai-sdk/openai";
 
-const DEFAULT_MODEL = "gemini/gemini-2.5-flash";
+const DEFAULT_MODEL = "models/gemini-2.5-flash";
 
 const getBaseUrl = (): string => {
   const baseUrl = process.env.OPENAI_API_BASE;
   if (!baseUrl) {
     console.warn("No base URL found for OpenAI, using default URL");
-    return "https://litellm.psy-tech.link";
+    return "https://apigem.psy-tech.link/openai/v1";
   }
   return baseUrl;
 };
@@ -14,10 +14,10 @@ const getBaseUrl = (): string => {
 const baseURL = getBaseUrl();
 
 const models = {
-  "gemini/gemini-2.5-flash": createOpenAI({
+  "models/gemini-2.5-flash": createOpenAI({
     apiKey: process.env.OPENAI_API_KEY,
     baseURL,
-  })("gemini/gemini-2.5-flash"),
+  })("models/gemini-2.5-flash"),
 };
 
 export const getModel = (name: string) => {

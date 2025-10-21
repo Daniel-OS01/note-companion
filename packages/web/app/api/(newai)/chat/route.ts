@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
           deepSearch = false,
         } = await req.json();
 
-        let chosenModelName = "gemini/gemini-2.5-flash";
+        let chosenModelName = "models/gemini-2.5-flash";
 
         const contextString =
           newUnifiedContext ||
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
 
         if (enableSearchGrounding) {
           console.log("Enabling search grounding with Responses API");
-          chosenModelName = "gemini/gemini-2.5-flash"; // Using standard model with the Responses API
+          chosenModelName = "models/gemini-2.5-flash"; // Using standard model with the Responses API
           console.log(`Using model for search: ${chosenModelName}`);
 
           const result = await streamText({

@@ -225,9 +225,9 @@ export async function getDeploymentStatus(): Promise<
     );
     const googleKeyPresent = envs.some((env) => env.key === "GOOGLE_API_KEY");
     const modelName =
-      envs.find((env) => env.key === "MODEL_NAME")?.value || "gemini/gemini-2.5-flash";
+      envs.find((env) => env.key === "MODEL_NAME")?.value || "models/gemini-2.5-flash";
     const visionModelName =
-      envs.find((env) => env.key === "VISION_MODEL_NAME")?.value || "gemini/gemini-2.5-flash";
+      envs.find((env) => env.key === "VISION_MODEL_NAME")?.value || "models/gemini-2.5-flash";
 
     return {
       projectUrl: deployment.projectUrl,
