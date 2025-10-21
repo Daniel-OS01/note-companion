@@ -335,7 +335,7 @@ server {
 By default, the self-hosted version uses SQLite. For production use, you can configure PostgreSQL:
 
 ```env
-DATABASE_URL=postgresql://user:password@localhost:5432/notecompanion
+DATABASE_URL=postgresql://user:password@0.0.0.0:5432/notecompanion
 ```
 
 ### Resource Limits

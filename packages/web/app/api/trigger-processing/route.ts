@@ -21,8 +21,8 @@ export async function POST(request: NextRequest) {
 
     // Call the process-pending-uploads endpoint
     const processingUrl = new URL("/api/process-pending-uploads", request.url);
-    // --- Force HTTP for localhost --- 
-    if (processingUrl.hostname === 'localhost') {
+    // --- Force HTTP for 0.0.0.0 --- 
+    if (processingUrl.hostname === '0.0.0.0') {
       processingUrl.protocol = 'http:';
     }
     // --- End Force HTTP --- 
