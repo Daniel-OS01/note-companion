@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Fabric not enabled." }, { status: 400 });
     }
 
-    const modelName = process.env.MODEL_NAME || 'models/gemini-2.5-flash';
+    const modelName = process.env.MODEL_NAME || 'models/gemini-2.5-pro';
     console.log(`Fabric classify using model: ${modelName}`);
     const model = getModel(modelName);
 

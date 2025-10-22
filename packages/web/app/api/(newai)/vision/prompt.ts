@@ -25,8 +25,8 @@ export const generateMessages = (
   console.log(`Vision processing using model: ${model}`);
 
   switch (model) {
-    case "models/gemini-2.5-flash":
-    case "models/gemini-2.5-flash":
+    case "models/gemini-2.5-pro":
+    case "models/gemini-2.5-pro":
     case "gpt-4o":
     case "claude-3-5-sonnet-20241022":
     default:

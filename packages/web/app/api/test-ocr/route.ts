@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
     const base64 = Buffer.from(arrayBuffer).toString("base64");
 
     // Process with appropriate model
-    const modelName = process.env.MODEL_NAME || "models/gemini-2.5-flash";
+    const modelName = process.env.MODEL_NAME || "models/gemini-2.5-pro";
     console.log(`OCR processing using model: ${modelName}`);
     const model = getModel(modelName);
     
